@@ -38,13 +38,13 @@ def chinese_remainder_theorem(a: list, m: list, verbose: bool = False):
         soln += (a[i]*ms[i]*m_invs[i]) % M
         if verbose:
             if i == 0:
-                print(' = ', end='')
+                print(' = ( ', end='')
             else:
                 print(' + ', end='')
             print(f'{a[i]}*{ms[i]}*{m_invs[i]}', end='')
 
     if verbose:
-        print()
+        print(f" ) mod {M}")
     return soln % M
 
 
