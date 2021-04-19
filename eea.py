@@ -3,7 +3,7 @@
 import math
 
 
-def extended_euclidean_algorithm(a, b, verbose):
+def extended_euclidean_algorithm(a, b, verbose=False):
 
     r1, r2 = a, b
     s1, s2 = 1, 0
@@ -40,4 +40,4 @@ if __name__ == '__main__':
     verbose = bool(input("Require process? ('1' - Yes) (Empty - No)"))
     gcd, S1, T1 = eea(a=n, b=b, verbose=verbose)
 
-    print(f"GCD = {r1}, S1 = {s1}, T1 = {t1}")
+    print(f"GCD = {gcd}, S1 = {s1}, T1 = {t1}")
