@@ -27,6 +27,6 @@ if __name__ == '__main__':
     base = int(input('Enter the value of the base: '))
     exp = int(input('Enter the value of the exponent: '))
     mod = int(input('Enter the value of the modulo: '))
-    # verbose = bool(input("Require process? ('1' - Yes) (Empty - No)"))
+    verbose = bool(input("Require process? ('1' - Yes) (Empty - No)"))
 
     print(f'({base}^{exp})%{mod} = {binexp(base, exp, mod, verbose)}')
