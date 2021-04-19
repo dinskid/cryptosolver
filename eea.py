@@ -38,6 +38,6 @@ if __name__ == '__main__':
     n = int(input("Value of a : "))
     b = int(input("Value of b : "))
     verbose = bool(input("Require process? ('1' - Yes) (Empty - No)"))
-    gcd, S1, T1 = eea(a=n, b=b, verbose=verbose)
+    gcd, S, T = eea(a=n, b=b, verbose=verbose)
 
-    print(f"GCD = {gcd}, S1 = {s1}, T1 = {t1}")
+    print(f"GCD = {gcd}, S1 = {S}, T1 = {T}")
